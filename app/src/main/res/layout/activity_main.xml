@@ -5,22 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="0dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="5dp"
         android:hint="Enter weight in kilograms"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:background="#63DBDBDB"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#039be5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -35,10 +42,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="77dp"
         android:text="0"
-        android:textSize="36sp"
+        android:textColor="#ffffff"
+        android:textSize="64sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
